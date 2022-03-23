@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" lang="pt-br" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="index.js" defer></script>
+    <title>Github search</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="titulo">
+        <h1>devfinder</h1>
+        <button id="toggle-theme">DARK</button>
+      </div>
+      <div class="searchbar">
+        <input id="user" placeholder="Search GitHub username..." />
+        <button id="botao" onclick="Cbotao()">Search</button>
+      </div>
+      <div class="content">
+        <div class="avatar">
+          <div class="foto" id="foto"></div>
+        </div>
+        <div class="user-info">
+          <div class="nome-user">
+            <h1 id="nome-user">The Octocat</h1>
+            <div class="user-joined">
+              <h3 id="user-joined">Joined 25 Jan 2011</h3>
+            </div>
+          </div>
+          <div class="user-arroba">
+            <a href="#" id="user-arroba">@octcat</a>
+          </div>
+          <div class="bio">
+            <h3 id="bio">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+              ratione quam maxime, velit earum est?
+            </h3>
+          </div>
+          <div class="user-actions">
+            <div class="repo">
+              <h3>Repos</h3>
+              <h1 id="repo">8</h1>
+            </div>
+            <div class="followers">
+              <h3>Followers</h3>
+              <h1 id="followers">3938</h1>
+            </div>
+            <div class="following">
+              <h3>Following</h3>
+              <h1 id="Following">9</h1>
+            </div>
+          </div>
+          <div class="social-media">
+            <div class="loc-site">
+              <h3>
+                <img src="./starter-code/assets/icon-location.svg" /><span
+                  id="lugar"
+                  >San Francisco</span
+                >
+              </h3>
+              <a href="#"
+                ><img src="./starter-code/assets/icon-website.svg" />
+                <span id="site">//github.blog</span></a
+              >
+            </div>
+            <div class="twitter-empresa">
+              <a href="#"
+                ><img src="./starter-code/assets/icon-twitter.svg" />
+                <span id="twitter">@thiagoMiotti</span></a
+              >
+              <a href="#"
+                ><img src="./starter-code/assets/icon-company.svg" />
+                <span id="company">@cbscestas</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

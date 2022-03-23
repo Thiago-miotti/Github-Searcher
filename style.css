@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&family=Outfit&family=Overpass:wght@600&family=Space+Mono:wght@400;700&family=Ubuntu:wght@700&display=swap");
+
+:root {
+  --blue: #0079ff;
+  --darkwhite: #f6f8ff;
+  --lightwhite: #fefefe;
+  --blackfont: black;
+  --grey: #697c9a;
+  --greyhover: #222731;
+}
+
+/* //dark theme */
+[data-theme="dark"] {
+  --darkwhite: #141d2f;
+  --lightwhite: #1e2a47;
+  --blackfont: #fefefe;
+  --grey: #fff;
+  --greyhover: #8b8b8b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--darkwhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Titulo e troca de dark mode para light mode */
+
+.titulo {
+  height: 50px;
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.titulo h1 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 26px;
+  color: var(--blackfont);
+}
+
+.titulo button {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 550;
+  background-image: url(./starter-code/assets/icon-moon.svg);
+  background-repeat: no-repeat;
+  background-position: 60px 14px;
+  color: var(--grey);
+  font-size: 17px;
+  width: 100px;
+  text-align: left;
+  background-color: var(--darkwhite);
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.titulo button:hover {
+  color: var(--greyhover);
+}
+
+/* search bar */
+
+.searchbar {
+  height: 70px;
+  width: 30vw;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--lightwhite);
+  box-shadow: 1px 5px 3px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.searchbar input {
+  flex-grow: 2;
+  color: var(--blackfont);
+  border: none;
+  background-color: var(--lightwhite);
+  background-image: url(./starter-code/assets/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 20px;
+  padding: 12px 20px 12px 70px;
+  font-size: 18px;
+  font-family: "Space Mono", sans-serif;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+
+.searchbar button {
+  width: 12%;
+  margin: 10px;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 10px;
+  font-family: "Space Mono", sans-serif;
+  font-weight: bold;
+  color: #fefefe;
+  cursor: pointer;
+}
+
+.searchbar button:hover {
+  background-color: #57a4fb;
+}
+
+/* Container com as informações */
+
+.content {
+  height: 450px;
+  width: 30vw;
+  background: var(--lightwhite);
+  border-radius: 15px;
+  box-shadow: 1px 5px 3px 0px rgba(90, 90, 90, 0.15);
+  display: flex;
+}
+
+.avatar {
+  height: 400px;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+}
+
+.foto {
+  height: 120px;
+  width: 120px;
+  background-image: url(./starter-code/assets/GitCat.png);
+  background-repeat: no-repeat;
+  background-size: 120px 120px;
+  border-radius: 60px;
+  margin-top: 40px;
+}
+
+.user-info {
+  height: 400px;
+  width: 20vw;
+  margin-right: 30px;
+}
+
+.nome-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.nome-user h1 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 24px;
+  color: var(--blackfont);
+}
+
+.nome-user h3 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 14px;
+  color: #697c9a;
+  font-weight: normal;
+}
+
+.user-arroba {
+  margin-top: 10px;
+  font-family: "Space Mono", sans-serif;
+}
+
+.user-arroba a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user-arroba a:hover {
+  text-decoration: underline;
+}
+
+.bio {
+  margin-top: 20px;
+  font-family: "Space Mono", sans-serif;
+  font-size: 12px;
+  color: #697c9a;
+}
+
+.bio h3 {
+  font-weight: normal;
+}
+
+.user-actions {
+  height: 90px;
+  margin-top: 30px;
+  background-color: var(--darkwhite);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-actions h3 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 12px;
+  color: #697c9a;
+  font-weight: normal;
+}
+
+.user-actions h1 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 24px;
+  color: var(--blackfont);
+}
+
+.repo {
+  flex: 1;
+  margin-left: 30px;
+}
+
+.followers {
+  flex: 1;
+}
+
+.following {
+  flex: 1;
+}
+
+.social-media {
+  height: 70px;
+  margin-top: 25px;
+  display: flex;
+}
+
+.loc-site {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.loc-site img {
+  margin-right: 8px;
+}
+
+.loc-site h3 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 13px;
+  color: #697c9a;
+  font-weight: normal;
+}
+
+.loc-site a {
+  font-family: "Space Mono", sans-serif;
+  font-size: 12px;
+  color: #697c9a;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.loc-site a:hover {
+  text-decoration: underline;
+}
+
+.twitter-empresa {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.twitter-empresa a {
+  font-family: "Space Mono", sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  color: #697c9a;
+  font-weight: normal;
+}
+
+.twitter-empresa a:hover {
+  text-decoration: underline;
+}
+
+.twitter-empresa img {
+  margin-right: 8px;
+}
+
+/* Trocando do tema light para dark */
+
+@media screen and (prefers-color-scheme: dark) {
+  .main-container {
+    background-color: #141d2f;
+  }
+
+  .titulo h1 {
+    color: #ffffff;
+  }
+
+  .titulo button {
+    color: #ffffff;
+    background-image: url(./starter-code/assets/icon-sun.svg);
+  }
+
+  .searchbar {
+    background-color: #141d2f;
+  }
+
+  .searchbar input {
+    color: #ffffff;
+    background-color: #141d2f;
+  }
+
+  .nome-user h1 {
+    color: #ffffff;
+  }
+}
+
+/*Tornando responsivo*/
+
+@media (max-width: 1809px) {
+  .nome-user,
+  .user-arroba,
+  .bio {
+    width: 100%;
+    display: block;
+  }
+  .avatar {
+    height: 100px;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .foto {
+    height: 90px;
+    width: 90px;
+    background-size: 100px 100px;
+  }
+
+  .user-actions {
+    width: 100%;
+  }
+
+  .twitter-empresa,
+  .loc-site {
+    display: block;
+  }
+}
